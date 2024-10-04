@@ -1,0 +1,29 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: selise-assessment-deployment
+  labels:
+    app: selise-assessment
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: selise-assessment
+  template:
+    metadata:
+      labels:
+        app: selise-assessment
+    spec:
+      containers:
+      - name: selise-api
+        image: himu1994/selise-assessment:latest
+        ports:
+        - containerPort: 3000
+        resources:
+          requests:
+            cpu: "100m"
+            memory: "128Mi"
+          limits:
+            cpu: "500m"
+            memory: "256Mi"
+
