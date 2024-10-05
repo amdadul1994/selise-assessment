@@ -1,5 +1,7 @@
 # Assessment
 ### To run the projects you need input your docker username and password as secrets
+### All my manifest file are located at k8s folder and Github CI/CD main.yml file located at .github/workflows
+
 ### Also need to input your Azure credentials as secrets
 ### Create a Virtual Network and Subnet for AKS  using AZ CLI
 ```
