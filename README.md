@@ -1,7 +1,7 @@
 # Assessment
 ### To run the projects you need input your docker username and password as secrets
 ### Also need to input your Azure credentials as secrets
-### Create a Virtual Network and Subnet for AKS AZ CLI
+### Create a Virtual Network and Subnet for AKS  using AZ CLI
 ```
 az network vnet create \
   --resource-group myResourceGroup \
